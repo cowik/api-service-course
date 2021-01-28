@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel Cowik
+                    Laravel Cowik Berhasil Bikin Deployer Laravel
                 </div>
 
                 <div class="links">
