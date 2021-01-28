@@ -1,0 +1,19 @@
+name: Laravel
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  laravel-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Deploy to production
+      uses: appleboy/ssh-action@master
+      with:
+          username: "cowik"
+          host: "PUT_YOUR_VPS_IP"
+          password: "PUT_YOUR_VPS_PASSWORD"
+          script: 'cd /home/cowik/microservice-project/api-service-course && ./deploy.sh' 
