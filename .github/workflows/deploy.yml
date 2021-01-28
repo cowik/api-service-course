@@ -23,4 +23,4 @@ jobs:
             sudo chmod -R 755 /home/cowik/prod/microservice-project/api-service-course
             sudo chmod -R 777 /home/cowik/prod/microservice-project/api-service-course/storage
             sudo chmod 777 deploy.sh
-            deploy.sh
+            ./deploy.sh
