@@ -27,7 +27,7 @@ Preparation login into your server first, and then clone repo and run
 
 ```sh
 $ composer install
-$ ./env-generator-prod
+$ ./env-generator-prod.sh
 $ php artisan key:generate
 $ sudo chown -R $USER:www-data storage
 $ sudo chown -R $USER:www-data bootstrap/cache
