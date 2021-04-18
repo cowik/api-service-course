@@ -1,22 +1,22 @@
-# name: Laravel
+name: Laravel
 
-# on:
-#   push:
-#     branches: [ master ]
+on:
+  push:
+    branches: [ live ]
 
-# jobs:
-#   deploy-api-service-course:
+jobs:
+  deploy-api-service-course:
 
-#     runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-#     steps:
-#     - name: Deploy to production
-#       uses: appleboy/ssh-action@master
-#       with:
-#           username: ${{ secrets.USERNAME }}
-#           host: ${{ secrets.HOST }}
-#           password: ${{ secrets.PASSWORD }}
-#           # script: 'cd /home/cowik/prod/microservice-project/api-service-course && ./deploy.sh'
-#           script: |
-#             cd /home/cowik/prod/microservice-project/api-service-course
-#             ./deploy.sh
+    steps:
+    - name: Deploy to production
+      uses: appleboy/ssh-action@master
+      with:
+          username: ${{ secrets.USERNAME }}
+          host: ${{ secrets.HOST }}
+          password: ${{ secrets.PASSWORD }}
+          # script: 'cd /home/cowik/prod/microservice-project/api-service-course && ./deploy.sh'
+          script: |
+            cd /live/idkode/api-service-course
+            ./deploy.sh
