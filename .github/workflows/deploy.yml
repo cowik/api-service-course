@@ -18,5 +18,5 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           # script: 'cd /home/cowik/prod/microservice-project/api-service-course && ./deploy.sh'
           script: |
-            cd /live/idkode-api-courses
+            cd /home/wikrama/project-live/idkode-api-courses
             ./deploy.sh
